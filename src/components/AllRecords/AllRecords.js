@@ -19,6 +19,8 @@ const AllRecords = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  console.log("total lenth "  ,measures.length)
+
   useEffect(() => {
     const arr = JSON.parse(localStorage.getItem("mydata")) || [];
     setMeasures(arr);
@@ -69,11 +71,14 @@ const AllRecords = () => {
   };
   const RerenderComponent = () => {
     setRerenderFlag(!rerenderFlag);
-    console.log("I have been rerendered !");
   };
   return (
     <div className="form-section search-area">
-      <div className="form-group">
+    <div className="top d-flex">
+      <div className="lenght">
+        <h4>Total:<span style={{color:'gray' , marginLeft:'5px'}}>{measures.length}</span></h4>
+      </div>
+    <div className="form-group">
         <input
           type="text"
           className="form-control"
@@ -81,6 +86,7 @@ const AllRecords = () => {
           onChange={filterData}
         ></input>
       </div>
+    </div>
       {/* <EditRecord modal = {modal}/> */}
       <table className="table">
         <thead className="thead-dark">

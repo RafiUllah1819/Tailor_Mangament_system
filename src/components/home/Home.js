@@ -3,6 +3,7 @@ import { toast } from 'react-toastify';
 
 const Home = () => {
    
+    // eslint-disable-next-line
     const [edit, setEdit] = useState({
         isEditing:false,
         editIndex: 0
@@ -47,6 +48,7 @@ const Home = () => {
         }
     }
 
+    // eslint-disable-next-line
     const editRecord = (index) =>{
         const temp = {...edit};
         temp.isEditing = true;

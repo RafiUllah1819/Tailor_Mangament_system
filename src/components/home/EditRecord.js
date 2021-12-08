@@ -1,10 +1,9 @@
 import React , {useState , useEffect} from 'react';
 import { toast } from 'react-toastify';
-import { useNavigate } from 'react-router-dom';
+
 
 const EditRecord = (props) => {
    
-    const navigate = useNavigate()
     const [measure , setMeasure] = useState([])
     const [state, setState] = useState({
         name: '', fname: '', address: '', contact: '', height: '',sleev: '',
@@ -13,9 +12,9 @@ const EditRecord = (props) => {
         round : '',straight : '', one: '', two: '',  simple: '',
     })
 
-    console.log("props_meas" , props.meas)
-    console.log("props_edit" , props.edit)
-    console.log("props_edit_Index" , props.editIndex)
+    // console.log("props_meas" , props.meas)
+    // console.log("props_edit" , props.edit)
+    // console.log("props_edit_Index" , props.editIndex)
     
         const {name, fname, address, contact, height, sleev, shoulder, neck , width , chest, 
         paint, foot, front, oneside, doublesides, round, straight, one, two, simple 
@@ -32,6 +31,7 @@ const EditRecord = (props) => {
         else newData.splice(props.editIndex, 1, myobj)
         localStorage.setItem('mydata', JSON.stringify(newData));
         success("Record updated successfully")
+        // eslint-disable-next-line
         props.rerender();
         props.handleClose()
         
@@ -164,12 +164,16 @@ const EditRecord = (props) => {
         setState(copy)
     }
   
+    // eslint-disable-next-line
     useEffect(()=>{
         const arr = JSON.parse(localStorage.getItem('mydata')) || []
         setMeasure(arr)
         setState(props.meas)
+        // eslint-disable-next-line
     },[])
 
+
+    // eslint-disable-next-line
     const error = (msg) => {
         toast.error(msg,{
          position: "top-right",

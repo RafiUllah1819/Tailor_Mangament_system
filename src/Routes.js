@@ -8,6 +8,8 @@ import SingleRecord from './components/SingleRecord/SingleRecord';
 import ProtectedRoutes from './ProtectedRoutes';
 import Dashboard from './components/Dashbaord/Dashboard';
 import About from './components/About/About';
+import Calendar from './components/Calender/Calender';
+import Contact from './components/Contact/Contact';
 
 
 
@@ -23,6 +25,8 @@ const Router = () => {
                 <Route path="/allrecords" element={<AllRecords/>} />
                 <Route path="/singleRecord/:id" element={<SingleRecord/>} />
                 <Route path="/about" element={<About/>} />
+                <Route path="/calender" element={<Calendar/>} />
+                <Route path="/contact" element={<Contact/>} />
              </Route>
              </Routes>
         </div>

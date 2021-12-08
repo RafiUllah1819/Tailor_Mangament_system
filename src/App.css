@@ -213,3 +213,8 @@ h1{
  height: 37px;
   margin-bottom: 10px;
 }
+.react-calender{
+  max-width: 358px;
+  margin: 0 auto;
+  text-align: center;
+}

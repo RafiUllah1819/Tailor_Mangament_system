@@ -49,12 +49,12 @@ const Navbar = () => {
     <Link className="navLink" to="/about"> About</Link>
    </li>
   <li className="list-group-item">
-  <Link className="navLink" to="/about">
+  <Link className="navLink" to="/calender">
   Calender
   </Link>
    </li>
   <li className="list-group-item">
-  <Link className="navLink" to="/about">
+  <Link className="navLink" to="/contact">
     Contact Us
   </Link>
     </li>

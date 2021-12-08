@@ -5,12 +5,12 @@ import 'font-awesome/css/font-awesome.min.css';
 const SingleRecord = () => {
     const [person, setPerson] = useState({})
     const {id} = useParams()
-
+    // eslint-disable-next-line
     useEffect(()=>{
         const arr = JSON.parse(localStorage.getItem(`mydata`)) || []
         // console.log("arr" , arr)
         setPerson(arr[id]);
-      
+      // eslint-disable-next-line
     },[])
     // console.log("myid" , id)
     // console.log("myperson" , person)
