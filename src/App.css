@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +35,181 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* .App{
+  background: url('./shop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+} */
+.App{
+  background: cadetblue;
+  height: 100vh;
+}
+
+.form-section{
+  padding-top: 30px;
+  width: 84%;
+  margin-left: auto;
+  padding: 30px;
+  margin-top: 13px;
+  background: floralwhite;
+  margin-right: 9px;
+  min-height: 454px;
+}
+input{
+  height: 48px;
+}
+
+.form-check{
+  text-align: left;
+}
+h6{
+  text-align: left;
+  font-size: 23px;
+}
+label{
+  font-size: 16px;
+}
+.list-group{width: 15%;
+  position: absolute;
+}
+.list-group-item{
+  padding: 25px 0 25px 20px;
+  text-align: left;
+  font-size: 20px;
+  line-height: 61px;
+  display: flex;
+  align-items: center;
+  /* padding-top: 20px; */
+}
+.navbar-brand{
+  width: 20%;
+  text-align: left;
+  padding:25px 0 25px 20px;
+  font-size: 20px;
+}
+nav{height: 73px;}
+a {text-decoration: none;font-size: 20px;}
+.navLink{text-decoration: none;color: #000;}
+.nav-link{font-size: 20px;}
+.dashbaord{height: 305px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-button{
+  max-width: 140px;
+  display: flex;
+}
+button{
+  max-width: 140px;
+}
+.collapse{
+  justify-content: end;
+}
+.collapse button{
+  width: 111px;
+    height: 43px;
+    margin-right: 27px;
+    border-radius: 21px
+}
+.edit{
+  cursor: pointer;
+  margin-right: 10px;
+}
+.trash{
+  cursor: pointer;
+  color: red;
+}
+.more a{
+  font-size: 15px;
+}
+.card{
+  max-width: 600px;
+  margin: 0 auto;
+  /* margin-top: 40px; */
+}
+li{
+  list-style-type: none;
+}
+.profile{
+  font-size: 74px;
+  margin: 0 auto;
+  margin-top: -32px
+}
+.card-title{
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+
+}
+.sub-title {flex-wrap: wrap;
+  margin: 25px 0 17px;
+  border-bottom: 1px solid lightgray;
+}
+h5{
+  width: 33%;
+}
+.card-details{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-details li{
+  list-style-type: none;
+  width: 32%;
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 3px;
+}
+
+/* auth css start here */
+.auths{
+  padding-top: 30px;
+}
+.auth{
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: darkgray;
+  padding: 50px 20px 200px;
+  border-radius: 5px;
+}
+.auth input{
+  height: 48px;
+}
+.auth button{
+  display: flex;
+  min-width: 84px;
+  height: 42px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  border-radius: 5px
+}
+/* p{padding-top: 25px;} */
+h1{
+  text-align: center;
+  color: #fff;
+  padding-bottom: 30px;
+}
+.modal.fade .modal-dialog{max-width: 1200px;}
+.card-body{padding-bottom: 0;}
+
+ 
+/* .logout{
+  height: 58px;
+    width: 149px;
+    font-size: 21px;
+    border-radius: 43px;
+    margin-right: 10px;
+} */
+
+.search-area .form-group{
+  max-width: 203px;
+  margin-left: auto;
+}
+.search-area .form-control{
+ height: 37px;
+  margin-bottom: 10px;
 }
